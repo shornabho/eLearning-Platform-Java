@@ -1,9 +1,7 @@
 public class Student extends User {
 
     Student() {
-        addCourse("Course 1");
-        addCourse("Course 2");
-        addCourse("Course 3");
+        super();
     }
 
     Student(String emailId, String name, String password) {
@@ -18,7 +16,7 @@ public class Student extends User {
         System.out.println("Student Encrypted Password: " + this.getPassword());
         System.out.println("Student Courses: ");
 
-        for (String course : this.getCourses())
+        for (Course course : this.getCourses())
         {
             System.out.println(course);
         }

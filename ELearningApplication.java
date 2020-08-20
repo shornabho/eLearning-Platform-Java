@@ -1,7 +1,9 @@
 import java.util.Scanner;
+import java.io.Console;
 
 public class ELearningApplication {
     static Scanner sc = new Scanner(System.in);
+    static Console console = System.console();
 
     public static void main(String[] args) {
         showMenu();
@@ -58,8 +60,8 @@ public class ELearningApplication {
         String name = sc.nextLine();
         System.out.println("Enter email id: ");
         String emailId = sc.nextLine();
-        System.out.println("Enter password: ");
-        String password = sc.nextLine();
+        char[] passwordChars = console.readPassword("Enter password: ");
+        String password = new String(passwordChars);
         System.out.println("--------------------");
 
         if ( user.signUp(name, emailId, password) ) {
@@ -84,8 +86,8 @@ public class ELearningApplication {
 
         System.out.println("Enter email id: ");
         String emailId = sc.nextLine();
-        System.out.println("Enter password: ");
-        String password = sc.nextLine();
+        char[] passwordChars = console.readPassword("Enter password: ");
+        String password = new String(passwordChars);
         System.out.println("--------------------");
 
         if (user.signIn(emailId, password))
