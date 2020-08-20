@@ -10,21 +10,9 @@ public abstract class User {
     protected ArrayList<Course> courses = new ArrayList<>();
 
     User() {
-        Teacher teacher1 = new Teacher("teacher1@university.com", "Teacher 1", "password");
-        Teacher teacher2 = new Teacher("teacher2@university.com", "Teacher 2", "password");
-        ArrayList<Teacher> teachersList = new ArrayList<>();
-        teachersList.add(teacher1);
-        teachersList.add(teacher2);
-
-        Lesson lesson1 = new Lesson();
-        Lesson lesson2 = new Lesson();
-        ArrayList<Lesson> lessonsList = new ArrayList<>();
-        lessonsList.add(lesson1);
-        lessonsList.add(lesson2);
-
-        this.addCourse("Course 1", teachersList, 75, lessonsList);
-        this.addCourse("Course 2", teachersList, 53, lessonsList);
-        this.addCourse("Course 3", teachersList, 29, lessonsList);
+        this.addCourse("Course 1", TestClass.teachersList, 75, TestClass.lessonsList);
+        this.addCourse("Course 2", TestClass.teachersList, 53, TestClass.lessonsList);
+        this.addCourse("Course 3", TestClass.teachersList, 29, TestClass.lessonsList);
     }
 
     public String getEmailId() {

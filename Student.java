@@ -18,7 +18,7 @@ public class Student extends User {
 
         for (Course course : this.getCourses())
         {
-            System.out.println(course);
+            course.showCourseDetails();
         }
     }
 }

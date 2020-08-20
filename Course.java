@@ -44,4 +44,19 @@ public class Course {
     public void setLessonsIncluded(ArrayList<Lesson> lessonsIncluded) {
         this.lessonsIncluded = lessonsIncluded;
     }
+
+    public void showCourseDetails() {
+        System.out.println("\t*************");
+        System.out.println("\tCourse: " + getCourseName());
+        System.out.println("\tTeachers: ");
+        for (Teacher teacher : getTeachersInCharge())
+        {
+            System.out.println("\t" + teacher.name);
+        }
+        System.out.println("\t Number of Hours: " + getNumOfHours());
+        for (Lesson lesson : getLessonsIncluded())
+        {
+            System.out.println("\t" + lesson);
+        }
+    }
 }
