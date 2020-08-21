@@ -13,8 +13,8 @@ public class TestClass {
         teachersList.add(teacher1);
         teachersList.add(teacher2);
 
-        Lesson lesson1 = new Lesson();
-        Lesson lesson2 = new Lesson();
+        Lesson lesson1 = new Lesson("Lesson 1", "Welcome to Lesson 1.");
+        Lesson lesson2 = new Lesson("Lesson 2", "Welcome to Lesson 2.");
         lessonsList.add(lesson1);
         lessonsList.add(lesson2);
     }
