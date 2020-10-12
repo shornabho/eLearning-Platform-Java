@@ -11,10 +11,10 @@ public class Teacher extends User {
     }
 
     public void viewDetails() {
-        System.out.println("Teacher Name: " + this.getName());
-        System.out.println("Teacher Email: " + this.getEmailId());
-        System.out.println("Teacher Encrypted Password: " + this.getPassword());
-        System.out.println("Teacher Courses: ");
+        System.out.println("Teacher's Name: " + this.getName());
+        System.out.println("Teacher's Email: " + this.getEmailId());
+        System.out.println("Teacher's Encrypted Password: " + this.getPassword());
+        System.out.println("Teacher's Courses: ");
 
         for (Course course : this.getCourses())
         {

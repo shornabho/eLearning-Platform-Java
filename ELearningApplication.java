@@ -6,11 +6,20 @@ public class ELearningApplication {
     static Console console = System.console();
 
     public static void main(String[] args) {
-        showMenu();
+        if (args.length < 1)
+        {
+            System.out.println("Please enter username as command-line argument. No spaces are allowed.");
+        }
+        else if (args.length > 1) {
+            System.out.println("Expected 1 argument, got more.");
+        }
+        else {
+            System.out.println("\n--------------------------------- Hello, " + args[0] + " ---------------------------------\n");
+            showMenu();
+        }
     }
 
     private static void showMenu() {
-
         while (true) {
             System.out.println("***********************");
             System.out.println("Choose Sign Up option: ");
