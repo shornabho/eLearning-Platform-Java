@@ -56,28 +56,7 @@ public abstract class User {
 
     public abstract void viewDetails();
 
-    public boolean signUp(String firstName, String lastName, String emailId, String password) throws EmptyFieldException
-    {
-        if (firstName.isBlank()) {
-            throw new EmptyFieldException("First name field is blank.");
-        }
-        else if (lastName.isBlank()) {
-            throw new EmptyFieldException("Last name field is blank.");
-        }
-        else if (emailId.isBlank()) {
-            throw new EmptyFieldException("Email Id field is blank.");
-        }
-        else if (password.isBlank()) {
-            throw new EmptyFieldException("Password field is blank.");
-        }
-
-        this.setFirstName(firstName);
-        this.setLastName(lastName);
-        this.setEmailId(emailId);
-        this.setPassword(password);
-
-        return true;
-    }
+    public abstract boolean signUp(String firstName, String lastName, String emailId, String password) throws EmptyFieldException;
 
     public boolean signIn(String emailId, String password)
     {
