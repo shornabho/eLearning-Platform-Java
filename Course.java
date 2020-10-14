@@ -83,7 +83,7 @@ public class Course {
         System.out.println("\tTeachers: ");
         for (Teacher teacher : getTeachersInCharge())
         {
-            System.out.println("\t" + teacher.name);
+            System.out.println("\t" + teacher.getFullName());
         }
         System.out.println("\tNumber of Hours: " + getNumOfHours());
         for (Lesson lesson : getLessonsIncluded())

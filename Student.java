@@ -4,14 +4,15 @@ public class Student extends User {
         super();
     }
 
-    Student(String emailId, String name, String password) {
+    Student(String emailId, String firstName, String lastName, String password) {
         this.setEmailId(emailId);
-        this.setName(name);
+        this.setFirstName(firstName);
+        this.setLastName(lastName);
         this.setPassword(password);
     }
 
     public void viewDetails() {
-        System.out.println("Student Name: " + this.getName());
+        System.out.println("Student Name: " + this.getFullName());
         System.out.println("Student Email: " + this.getEmailId());
         System.out.println("Student Encrypted Password: " + this.getPassword());
         System.out.println("Student Courses: ");

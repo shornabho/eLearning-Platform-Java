@@ -7,8 +7,8 @@ public class TestClass {
     public static void create()
     {
 
-        Teacher teacher1 = new Teacher("teacher1@university.com", "Teacher 1", "password");
-        Teacher teacher2 = new Teacher("teacher2@university.com", "Teacher 2", "password");
+        Teacher teacher1 = new Teacher("teacher1@university.com", "Teacher", "1", "password");
+        Teacher teacher2 = new Teacher("teacher2@university.com", "Teacher", "1", "password");
 
         teachersList.add(teacher1);
         teachersList.add(teacher2);

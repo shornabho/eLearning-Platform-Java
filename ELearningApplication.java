@@ -26,7 +26,7 @@ public class ELearningApplication {
             System.out.println("1. As Teacher");
             System.out.println("2. As Student");
             System.out.println("***********************");
-            System.out.println("Enter your choice: ");
+            System.out.print("Enter your choice: ");
             int choice = sc.nextInt();
 
             // Garbage Collection for to clear input stream for future inputs
@@ -65,21 +65,25 @@ public class ELearningApplication {
         else
             System.out.println("User details: ");
 
-        System.out.println("Enter name: ");
-        String name = sc.nextLine();
-        System.out.println("Enter email id: ");
+        System.out.print("Enter first name: ");
+        String firstName = sc.nextLine();
+        System.out.print("Enter last name: ");
+        String lastName = sc.nextLine();
+        System.out.print("Enter email id: ");
         String emailId = sc.nextLine();
         char[] passwordChars = console.readPassword("Enter password: ");
         String password = new String(passwordChars);
         System.out.println("--------------------");
 
-        if ( user.signUp(name, emailId, password) ) {
+        try
+        {
+            user.signUp(firstName, lastName, emailId, password);
             System.out.println("Sign up successful!");
         }
-        else {
+        catch (EmptyFieldException e) {
+            System.out.println(e.getMessage());
             System.out.println("Sign up failure!");
         }
-
 
     }
 
@@ -93,7 +97,7 @@ public class ELearningApplication {
         else
             System.out.println("User details: ");
 
-        System.out.println("Enter email id: ");
+        System.out.print("Enter email id: ");
         String emailId = sc.nextLine();
         char[] passwordChars = console.readPassword("Enter password: ");
         String password = new String(passwordChars);
