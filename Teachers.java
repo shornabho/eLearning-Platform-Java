@@ -16,14 +16,14 @@ public class Teachers {
         }
     }
 
-    private static Teacher createTeacher(String[] row) { return new Teacher(row[0], row[1], row[2], row[3]); }
+    private static Teacher createTeacher(String[] row) { return new Teacher(row[0].trim(), row[1].trim(), row[2].trim(), row[3]); }
 
     public static List<Teacher> getTeachersList() {
         readTeachersFromFile();
         return teachersList;
     }
 
-    public static boolean addStudent(Teacher teacher) {
+    public static boolean addTeacher(Teacher teacher) {
 
         String[] data = {teacher.getEmailId(), teacher.getFirstName(), teacher.getLastName(), teacher.getPassword()};
 

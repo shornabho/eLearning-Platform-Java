@@ -47,15 +47,21 @@ public class ELearningApplication {
                 break;
             }
 
-            takeUserInputForSignUp(user);
+            User signedUpUser = takeUserInputForSignUp(user);
 
             System.out.println("Sign in to view information");
 
-            takeUserInputForSignIn(user);
+            User signedInUser = takeUserInputForSignIn(user);
+
+
+            System.out.println("----------------------------------");
+            signedInUser.viewDetails();
+            System.out.println("----------------------------------");
+            System.out.println();
         }
     }
 
-    private static void takeUserInputForSignUp(User user) {
+    private static User takeUserInputForSignUp(User user) {
         System.out.println("--------------------");
 
         if (user instanceof Student)
@@ -77,17 +83,27 @@ public class ELearningApplication {
 
         try
         {
-            user.signUp(firstName, lastName, emailId, password);
-            System.out.println("Sign up successful!");
+            if (user instanceof Student)
+                user = Student.signUp(firstName, lastName, emailId, password);
+            else if (user instanceof Teacher)
+                user = Teacher.signUp(firstName, lastName, emailId, password);
+            else
+                user = User.signUp(firstName, lastName, emailId, password);
+
+            if (user != null)
+                System.out.println("Sign up successful!");
+            else
+                System.out.println("Sign up failure!");
         }
         catch (EmptyFieldException e) {
             System.out.println(e.getMessage());
             System.out.println("Sign up failure!");
         }
 
+        return user;
     }
 
-    private static void takeUserInputForSignIn(User user) {
+    private static User takeUserInputForSignIn(User user) {
         System.out.println("--------------------");
 
         if (user instanceof Student)
@@ -103,16 +119,21 @@ public class ELearningApplication {
         String password = new String(passwordChars);
         System.out.println("--------------------");
 
-        if (user.signIn(emailId, password))
+        if (user instanceof Student)
+            user = Student.signIn(emailId, password);
+        else if (user instanceof Teacher)
+            user = Teacher.signIn(emailId, password);
+        else
+            user = User.signIn(emailId, password);
+
+        if (user != null)
         {
             System.out.println("Sign In successful!");
-            System.out.println("----------------------------------");
-            user.viewDetails();
-            System.out.println("----------------------------------");
-            System.out.println();
         }
         else {
             System.out.println("Sign In failure!");
         }
+
+        return user;
     }
 }

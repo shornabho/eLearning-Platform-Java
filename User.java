@@ -40,10 +40,7 @@ public abstract class User {
         this.emailId = emailId.trim();
     }
 
-    protected void setPassword(String password) {
-        String passwordHash = BCrypt.hashpw(password.trim(), BCrypt.gensalt());
-        this.password = passwordHash;
-    }
+    protected void setPassword(String encrpytedPassword) { this.password = encrpytedPassword; }
 
     public void setFirstName(String firstName) { this.firstName = firstName.trim(); }
 
@@ -56,13 +53,12 @@ public abstract class User {
 
     public abstract void viewDetails();
 
-    public abstract boolean signUp(String firstName, String lastName, String emailId, String password) throws EmptyFieldException;
+    public static User signUp(String firstName, String lastName, String emailId, String password) throws EmptyFieldException {
+        return null;
+    }
 
-    public boolean signIn(String emailId, String password)
+    public static User signIn(String emailId, String password)
     {
-        if (emailId.trim().equals(this.getEmailId()) && BCrypt.checkpw(password.trim(), this.getPassword()))
-            return true;
-        else
-            return false;
+        return null;
     }
 }

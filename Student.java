@@ -13,8 +13,7 @@ public class Student extends User {
         this.setPassword(password);
     }
 
-    public boolean signUp(String firstName, String lastName, String emailId, String password) throws EmptyFieldException
-    {
+    public static User signUp(String firstName, String lastName, String emailId, String password) throws EmptyFieldException {
         if (firstName.isBlank()) {
             throw new EmptyFieldException("First name field is blank.");
         }
@@ -28,28 +27,25 @@ public class Student extends User {
             throw new EmptyFieldException("Password field is blank.");
         }
 
-        this.setFirstName(firstName);
-        this.setLastName(lastName);
-        this.setEmailId(emailId);
-        this.setPassword(password);
 
-        if (Students.addStudent(this)) {
-            return true;
-        }
-        else {
-            return false;
-        }
+        String passwordHash = BCrypt.hashpw(password.trim(), BCrypt.gensalt());
+
+        Student student = new Student(emailId, firstName, lastName, passwordHash);
+
+        Students.addStudent(student);
+
+        return student;
     }
 
-//    public boolean signIn(String emailId, String password)
-//    {
-//        for (Student student : Students.getStudentList()) {
-//            if (student.getEmailId().equals(emailId.trim()) && BCrypt.checkpw(password.trim(), student.getPassword()))
-//                return true;
-//        }
-//
-//        return false;
-//    }
+    public static User signIn(String emailId, String password)
+    {
+        for (Student student : Students.getStudentList()) {
+            if (student.getEmailId().equals(emailId.trim()) && BCrypt.checkpw(password.trim(), student.getPassword()))
+                return student;
+        }
+
+        return null;
+    }
 
     public void viewDetails() {
         System.out.println("Student Name: " + this.getFullName());
