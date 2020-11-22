@@ -1,10 +1,12 @@
+package ElearningPackage;
+
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
 public class Students {
     private static List<Student> studentList = new ArrayList<>();
-    private static final String STUDENTS_CSV_FILE = "../assets/data/Students.csv";
+    private static final String STUDENTS_CSV_FILE = "assets/data/Students.csv";
 
     public static void readStudentsFromFile() {
         studentList.clear();

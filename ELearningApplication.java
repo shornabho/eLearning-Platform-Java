@@ -1,3 +1,5 @@
+package ElearningPackage;
+
 import java.util.Scanner;
 import java.io.Console;
 
@@ -20,48 +22,75 @@ public class ELearningApplication {
     }
 
     private static void showMenu() {
+
         while (true) {
             System.out.println("***********************");
-            System.out.println("Choose Sign Up option: ");
-            System.out.println("1. As Teacher");
-            System.out.println("2. As Student");
+            System.out.println("Choose action:");
+            System.out.println("1. Sign Up");
+            System.out.println("2. Sign In");
             System.out.println("***********************");
-            System.out.print("Enter your choice: ");
+            System.out.println("Enter your choice: ");
             int choice = sc.nextInt();
 
-            // Garbage Collection for to clear input stream for future inputs
-            String garbage = sc.nextLine();
-
-            User user;
-
-            if (choice == 1)
-            {
-                user = new Teacher();
+            if (choice == 1) {
+                User signedUpUser = takeUserInputForSignUp();
+                if (signedUpUser == null) {
+                    System.out.println("Sign Up failure!");
+                    continue;
+                }
+                else {
+                    System.out.println("Sign Up successful!");
+                }
             }
-            else if (choice == 2)
-            {
-                user = new Student();
+            else if (choice == 2) {
+                User signedInUser = takeUserInputForSignIn();
+                if (signedInUser == null) {
+                    System.out.println("Sign In failure!");
+                    continue;
+                }
+                else {
+                    System.out.println("Sign In successful!");
+                    System.out.println("----------------------------------");
+                    signedInUser.viewDetails();
+                    System.out.println("----------------------------------");
+                    System.out.println();
+                }
             }
             else {
                 System.out.println("Bye.");
-                break;
+                return;
             }
 
-            User signedUpUser = takeUserInputForSignUp(user);
 
-            System.out.println("Sign in to view information");
-
-            User signedInUser = takeUserInputForSignIn(user);
-
-
-            System.out.println("----------------------------------");
-            signedInUser.viewDetails();
-            System.out.println("----------------------------------");
-            System.out.println();
         }
     }
 
-    private static User takeUserInputForSignUp(User user) {
+    private static User takeUserInputForSignUp() {
+        System.out.println("***********************");
+        System.out.println("Choose Sign Up option: ");
+        System.out.println("1. As Teacher");
+        System.out.println("2. As Student");
+        System.out.println("***********************");
+        System.out.print("Enter your choice: ");
+        int choice = sc.nextInt();
+
+        // Garbage Collection for to clear input stream for future inputs
+        String garbage = sc.nextLine();
+
+        User user;
+
+        if (choice == 1)
+        {
+            user = new Teacher();
+        }
+        else if (choice == 2)
+        {
+            user = new Student();
+        }
+        else {
+            return null;
+        }
+
         System.out.println("--------------------");
 
         if (user instanceof Student)
@@ -89,11 +118,6 @@ public class ELearningApplication {
                 user = Teacher.signUp(firstName, lastName, emailId, password);
             else
                 user = User.signUp(firstName, lastName, emailId, password);
-
-            if (user != null)
-                System.out.println("Sign up successful!");
-            else
-                System.out.println("Sign up failure!");
         }
         catch (EmptyFieldException e) {
             System.out.println(e.getMessage());
@@ -103,7 +127,29 @@ public class ELearningApplication {
         return user;
     }
 
-    private static User takeUserInputForSignIn(User user) {
+    private static User takeUserInputForSignIn() {
+        System.out.println("***********************");
+        System.out.println("Choose Sign In option: ");
+        System.out.println("1. As Teacher");
+        System.out.println("2. As Student");
+        System.out.println("***********************");
+        System.out.print("Enter your choice: ");
+        int choice = sc.nextInt();
+
+        // Garbage Collection for to clear input stream for future inputs
+        String garbage = sc.nextLine();
+
+        User user = null;
+        
+        if (choice == 1)
+        {
+            user = new Teacher();
+        }
+        else if (choice == 2)
+        {
+            user = new Student();
+        }
+
         System.out.println("--------------------");
 
         if (user instanceof Student)
@@ -126,13 +172,7 @@ public class ELearningApplication {
         else
             user = User.signIn(emailId, password);
 
-        if (user != null)
-        {
-            System.out.println("Sign In successful!");
-        }
-        else {
-            System.out.println("Sign In failure!");
-        }
+        
 
         return user;
     }

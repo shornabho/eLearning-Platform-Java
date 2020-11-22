@@ -1,3 +1,5 @@
+package ElearningPackage;
+
 public class EmptyFieldException extends Exception {
     EmptyFieldException(String message)
     {

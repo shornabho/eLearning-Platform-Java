@@ -1,4 +1,5 @@
-import org.mindrot.jbcrypt.BCrypt;
+package ElearningPackage;
+
 import java.util.ArrayList;
 
 public abstract class User {

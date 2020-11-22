@@ -1,3 +1,5 @@
+package ElearningPackage;
+
 public class Lesson {
     private long lessonId;
     private String lessonTitle;

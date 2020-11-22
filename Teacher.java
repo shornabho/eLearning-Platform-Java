@@ -1,8 +1,11 @@
+package ElearningPackage;
+
 import org.mindrot.jbcrypt.BCrypt;
 
 public class Teacher extends User {
 
     Teacher() {
+        // Call User class constructor
         super();
     }
 
@@ -14,6 +17,7 @@ public class Teacher extends User {
     }
 
     public static User signUp(String firstName, String lastName, String emailId, String password) throws EmptyFieldException {
+        // Validate fields
         if (firstName.isBlank()) {
             throw new EmptyFieldException("First name field is blank.");
         }
@@ -26,11 +30,11 @@ public class Teacher extends User {
         else if (password.isBlank()) {
             throw new EmptyFieldException("Password field is blank.");
         }
-
+        // Hash the password for input in db
         String passwordHash = BCrypt.hashpw(password.trim(), BCrypt.gensalt());
-
+        // Create new teacher instance
         Teacher teacher = new Teacher(emailId, firstName, lastName, passwordHash);
-
+        // Add teacher to teachers db
         Teachers.addTeacher(teacher);
 
         return teacher;
@@ -38,6 +42,7 @@ public class Teacher extends User {
 
     public static User signIn(String emailId, String password)
     {
+        // Fetch appropriate teacher from db matching email and password
         for (Teacher teacher : Teachers.getTeachersList()) {
             if (teacher.getEmailId().equals(emailId.trim()) && BCrypt.checkpw(password.trim(), teacher.getPassword()))
                 return teacher;
@@ -47,6 +52,7 @@ public class Teacher extends User {
     }
 
     public void viewDetails() {
+        // View teacher details
         System.out.println("Teacher's Name: " + this.getFullName());
         System.out.println("Teacher's Email: " + this.getEmailId());
         System.out.println("Teacher's Encrypted Password: " + this.getPassword());
