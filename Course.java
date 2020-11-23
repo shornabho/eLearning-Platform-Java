@@ -90,7 +90,7 @@ public class Course {
         System.out.println("\tNumber of Hours: " + getNumOfHours());
         for (Lesson lesson : getLessonsIncluded())
         {
-            System.out.println("\t" + lesson);
+            lesson.showLessonDetails();
         }
     }
 }
