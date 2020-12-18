@@ -3,11 +3,30 @@ package ElearningPackage;
 import java.util.Scanner;
 import java.io.Console;
 
-public class ELearningApplication {
+public class ELearningApplication extends Thread {
     static Scanner sc = new Scanner(System.in);
     static Console console = System.console();
 
-    public static void main(String[] args) {
+    @Override
+    public void run() {
+        for(int i = 5; i >= 0; i--) {
+            try {
+                Thread.sleep(1000);
+                System.out.print("..");
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+        System.out.println();
+        System.out.println("Ready!");
+
+    }
+
+    public static void main(String[] args) throws InterruptedException {
+        ELearningApplication thread = new ELearningApplication();
+        thread.start();
+        thread.join();
+
         if (args.length < 1)
         {
             System.out.println("Please enter username as command-line argument. No spaces are allowed.");
@@ -17,6 +36,7 @@ public class ELearningApplication {
         }
         else {
             System.out.println("\n--------------------------------- Hello, " + args[0] + " ---------------------------------\n");
+
             showMenu();
         }
     }

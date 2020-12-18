@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c17b4d97-c15c-43a8-8795-46a966b43452" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/src/main/java" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1g0PaWp6fIAGJpLbcWY4cxCyi6Z" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="true" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/ElearningPackage" />
+      <recent name="$PROJECT_DIR$/src/com/shornabho/elearning" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.RegisterForm">
+    <configuration name="DeleteCourseForm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DeleteCourseForm" />
+      <module name="eLearningPlatform" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ELearningApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ElearningPackage.ELearningApplication" />
+      <module name="eLearningPlatform" />
+      <option name="PROGRAM_PARAMETERS" value="shornabho" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginForm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LoginForm" />
+      <module name="eLearningPlatform" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegisterForm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="RegisterForm" />
+      <module name="eLearningPlatform" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UpdateCourseForm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="UpdateCourseForm" />
+      <module name="eLearningPlatform" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.RegisterForm" />
+        <item itemvalue="Application.DeleteCourseForm" />
+        <item itemvalue="Application.UpdateCourseForm" />
+        <item itemvalue="Application.LoginForm" />
+        <item itemvalue="Application.ELearningApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c17b4d97-c15c-43a8-8795-46a966b43452" name="Default Changelist" comment="" />
+      <created>1597248601187</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1597248601187</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:/Users/swarnavaghosh/IdeaProjects/eLearningPlatform/src/org/mindrot/jbcrypt" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="OPEN_TABS">
+      <set>
+        <option value="1" />
+      </set>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="320" y="116" key="#Getter_Template" timestamp="1601841279102">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="320" y="116" key="#Getter_Template/0.0.1440.900@0.0.1440.900" timestamp="1601841279102" />
+    <state x="320" y="115" key="#Project_Structure" timestamp="1608162182613">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="320" y="115" key="#Project_Structure/0.0.1440.900@0.0.1440.900" timestamp="1608162182613" />
+    <state x="320" y="116" key="#Setter_Template" timestamp="1601841263342">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="320" y="116" key="#Setter_Template/0.0.1440.900@0.0.1440.900" timestamp="1601841263342" />
+    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1608159621099">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1608159621099" />
+    <state x="533" y="141" key="#com.intellij.ide.util.MemberChooser" timestamp="1608181341996">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="533" y="141" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1608181341996" />
+    <state x="457" y="241" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1608159615336">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="457" y="241" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1440.900@0.0.1440.900" timestamp="1608159615336" />
+    <state x="443" y="146" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1608158778019">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="443" y="146" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1440.900@0.0.1440.900" timestamp="1608158778019" />
+    <state x="569" y="346" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1608159947135">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="569" y="346" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1440.900@0.0.1440.900" timestamp="1608159947135" />
+    <state x="486" y="342" width="467" height="225" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1608149991495">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="486" y="342" width="467" height="225" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1440.900@0.0.1440.900" timestamp="1608149991495" />
+    <state x="465" y="313" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1601840762557">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="465" y="313" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1440.900@0.0.1440.900" timestamp="1601840762557" />
+    <state x="258" y="112" key="DBNavigator.ProjectSettingsDialog" timestamp="1608161896857">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="258" y="112" key="DBNavigator.ProjectSettingsDialog/0.0.1440.900@0.0.1440.900" timestamp="1608161896857" />
+    <state width="1398" height="169" key="GridCell.Tab.0.bottom" timestamp="1608193747922">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="169" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1608193747922" />
+    <state width="1398" height="296" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1608181082202" />
+    <state width="1398" height="169" key="GridCell.Tab.0.center" timestamp="1608193747922">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="169" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1608193747922" />
+    <state width="1398" height="296" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1608181082201" />
+    <state width="1398" height="169" key="GridCell.Tab.0.left" timestamp="1608193747921">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="169" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1608193747921" />
+    <state width="1398" height="296" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1608181082200" />
+    <state width="1398" height="169" key="GridCell.Tab.0.right" timestamp="1608193747922">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="169" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1608193747922" />
+    <state width="1398" height="296" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1608181082201" />
+    <state x="221" y="63" key="SettingsEditor" timestamp="1608161843514">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="221" y="63" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1608161843514" />
+    <state x="397" y="309" key="com.intellij.ide.util.TipDialog" timestamp="1608161863238">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="397" y="309" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1608161863238" />
+    <state x="397" y="309" key="com.intellij.ide.util.TipDialog/0.23.1440.877@0.23.1440.877" timestamp="1606075627290" />
+    <state x="424" y="350" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1608162165156">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="424" y="350" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1440.900@0.0.1440.900" timestamp="1608162165156" />
+    <state x="97" y="72" key="new project wizard" timestamp="1607545753488">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="97" y="72" key="new project wizard/0.0.1440.900@0.0.1440.900" timestamp="1607545753488" />
+    <state x="385" y="210" key="run.anything.popup" timestamp="1606081307051">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="385" y="210" key="run.anything.popup/0.0.1440.900@0.0.1440.900" timestamp="1606081307051" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1608158876913">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1608158876913" />
+  </component>
+</project>

@@ -1,6 +1,7 @@
 package ElearningPackage;
 
 import java.time.Duration;
+import ElearningPackage.*;
 
 public interface Lesson {
     public long getLessonId();
